@@ -3,10 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Car Dealership</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>TEST</h2>
-    
+  <!--HEADER/NAVBAR start-->
+<header>
+    <div id="MenuBtn" class="fas fa-bars"></div>
+    <a href="#" class="logo"><span>Car</span>Dealership</a>
+    <nav class="navbar">
+        <a href="#Home">Home</a>
+        <a href="#Vehicle">Vehicles</a>
+        <a href="#Contact">Contact</a>
+        <a href="#Services">Services</a>
+        <a href="#Review">Review</a>
+    </nav>
+
+<div id="LoginBtn">
+    <button class="btn">Login</button>
+    <i class="fas fa-user"></i>
+</div>
+<!--Scripta per JS-->
+<script src="index.js"></script>
+</header>
+
+<!--Login Form Container-i-->
+<div class="loginFormContainer">
+
+    <span id="CloseLoginForm" class="fas fa-times"></span>
+<form action="">
+    <h3>User Login</h3>
+    <input type="email" placeholder="Email" required class="box">
+    <input type="password" placeholder="Password" required class="box">
+    <p>Forgot your Password? <a href="#">Click Here</a></p>
+    <button class="btn">Submit</button>
+    <p>or Login With</p>
+    <div class="buttons">
+        <a href="#" class="btn">Google</a>
+        <a href="#" class="btn">Facebook</a>
+    </div>
+</form>
+</div>
+
+<!--HOME SECTION startpoint-->
+<section id="Home" class="home">
+    <img src="images" alt="">
+</section>
 </body>
 </html>
