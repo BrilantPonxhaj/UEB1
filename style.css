@@ -1,11 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,400;1,500&display=swap");
-:root 
-{
+:root {
     --main:#ff0019;
     --border:0.2rem solid rgba(0,0,0,0.5);
     --box_shadow:0 0.5rem 1rem rgba(0,0,0,0.8);
 }
-
 *{
     margin:0;
     padding: 0;
@@ -17,19 +15,17 @@
     transition: linear 0.2s;
 }
 *::selection {
-    background: var(--main);
+    background: lightblue;
     color: #000;
 }
 section{
     padding: 2rem 9%;
-    
-
 }
 html {
-    font-size: 62.5%;
+    font-size: 60.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    scroll-padding-top: 7rem;
+    scroll-padding-top: 6rem;
 }
 .btn
 {
@@ -43,13 +39,20 @@ html {
     font-weight: 500;
     text-align: center;
     border-radius: 0.5rem;
+    border: none;
+}
+.heading{
+    padding-bottom: 2rem;
+    font-size: 4.5rem;
+    text-align: center;
 }
 header{
+    z-index: 10000;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    padding: 3rem 9%;
+    padding: 1.5rem 9%;
     background: #fff;
     box-shadow: var(--box_shadow);
     display: flex;
@@ -65,8 +68,8 @@ header .logo span{
     color:var(--main);
 }
 header .navbar a{
-    font-size: 1.5rem;
-    columns: #000;
+    font-size: 1.8rem;
+    color: #000;
     margin: 0.1rem;
     justify-content: space-between;
 }
@@ -79,7 +82,8 @@ header .navbar a:hover{
 #LoginBtn i{
     color: var(--main);
     font-size: 2.5rem;
-    display:none;
+    display:inline-block;
+    /*font-weight: 900;*/
 }
 #MenuBtn {      /*qajo menubar anash SPOBON*/
     font-size:2.5rem;       
@@ -153,9 +157,68 @@ header .navbar a:hover{
     display: block;
     margin: 0.5rem 0;
 }
-/*Home Section startpoint*/
+/*HOME Section startpoint*/
+.home {
+    padding-top: 10rem;
+    overflow-x: hidden;
+    text-align: center;
+}
+.home h3{
+    font-size: 5.5vw;
+    text-transform: uppercase;
+    font-weight:200;
+    position: relative;
+}
+.home img{
+    width: 100%;
+    margin-top: -20rem;
+    /*transition: linear 0.2s;*/
+}
+/*IconsContainer Section startpoint (nashta mujna me bo edhe me bootstrap)*/
+.iconsContainer {
+    /*margin-bottom: 200px;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: #eee;
+}
+.iconsContainer .icons {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box_shadow);
+    border-radius: 0.5rem;
+    gap: 1.5rem;
+    padding:2rem;
+    cursor: pointer;
+}
+.iconsContainer .icons i{
+    background: #eee;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2.5rem;
+    border-radius: 50%;
+}
+.iconsContainer .icons h3{
+    font-size: 2.5rem;
+    color: var(--main);
+}
+.iconsContainer .icons p{
+    color: black;
+    font-size: 1.5rem;
+}
+.iconsContainer .icons:hover{
+    background: lightgrey;
+}
 
 
+/*VEHICLE SECTION START*/
+.vehicle{
+    margin-bottom: 200px;
+}
 
 /*MEDIA QUERY*/
 @media(max-width:991px){
@@ -165,7 +228,9 @@ header .navbar a:hover{
     header{
         padding: 2rem;
     }
-
+    section{
+        padding: 2rem;
+    }
 }
 @media(max-width:760px){  /*kur e bon inspect deri sa t arrin 760px menubtn nuk shfaqet*/
     #MenuBtn{
@@ -194,6 +259,9 @@ header .navbar a:hover{
         background:#ccc;
         padding: 1rem;
     }
+    .home img{
+        margin-top: -10rem;
+    }
 }
 @media(max-width:450px)
 {
@@ -201,4 +269,3 @@ header .navbar a:hover{
         font-size: 50%;
     }
 }
-
