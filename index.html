@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Dealership</title>
-    <link rel="stylesheet" href="style.css">
+    <!--Swiper js-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"/>
 </head>
 <body>
   <!--HEADER/NAVBAR start-->
@@ -14,22 +16,23 @@
     <nav class="navbar">
         <a href="#Home">Home</a>
         <a href="#Vehicle">Vehicles</a>
-        <a href="#Contact">Contact</a>
         <a href="#Services">Services</a>
         <a href="#Review">Review</a>
+        <a href="#Contact">Contact</a>
     </nav>
 
 <div id="LoginBtn">
     <button class="btn">Login</button>
-    <i class="fas fa-user"></i>
+    <i class="fa fa-bars"></i>
 </div>
-<!--Scripta per JS-->
-<script src="index.js"></script>
+
+
+
 </header>
+
 
 <!--Login Form Container-i-->
 <div class="loginFormContainer">
-
     <span id="CloseLoginForm" class="fas fa-times"></span>
 <form action="">
     <h3>User Login</h3>
@@ -47,7 +50,67 @@
 
 <!--HOME SECTION startpoint-->
 <section id="Home" class="home">
-    <img src="images" alt="">
+    <h3 data-speed="-2" class="homeParallaxEffect">Dealership</h3>
+    <img data-speed="5" class="home" src="https://i.pinimg.com/1200x/8a/d0/a5/8ad0a55f4693871099296f7b5298049b.jpg" alt="Transform">
+    <a href="#" class="btn">View Cars</a>
 </section>
+
+<!--ICONS CONTAINER START (kishim mujt me bo edhe me bootstrap)-->
+<section class="iconsContainer">
+    <div class="icons">
+        <i class="fas fa-home"></i>
+        <div class="content">
+            <h3>200+</h3>
+            <p>Branches</p>
+        </div>
+    </div>
+    <div class="icons">
+        <i class='fas fa-car'></i>
+        <div class="content">
+            <h3>4370+</h3>
+            <p>Cars Sold</p>
+        </div>
+    </div>
+    <div class="icons">
+        <i class='fas fa-users'></i>
+        <div class="content">
+            <h3>3200+</h3>
+            <p>Happy Customers</p>
+        </div>
+    </div>
+    <div class="icons">
+        <i class='fas fa-car'></i>
+        <div class="content">
+            <h3>1000+</h3>
+            <p>New Launches</p>
+        </div>
+    </div>
+
+
+</section>
+
+<!--VEHICLE SECTION START-->
+<section id="Vehicle" class="vehicle">
+    <h1 class="heading">Popular Vehicles</h1>
+    <div class="swiper VehiclesSlider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<!--SWIPER JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+<!--Scripta per JS-->
+<script src="index.js"></script>
 </body>
 </html>
