@@ -4,6 +4,15 @@
     --border:0.2rem solid rgba(0,0,0,0.5);
     --box_shadow:0 0.5rem 1rem rgba(0,0,0,0.8);
 }
+html::-webkit-scrollbar{
+    width: 10px;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--main);
+}
+html::-webkit-scrollbar-track{
+    background: black;
+}
 *{
     margin:0;
     padding: 0;
@@ -15,11 +24,12 @@
     transition: linear 0.2s;
 }
 *::selection {
-    background: lightblue;
+    background: #717171;
     color: #000;
 }
 section{
     padding: 2rem 9%;
+    /*background-color:lightgray;*/
 }
 html {
     font-size: 60.5%;
@@ -87,7 +97,7 @@ header .navbar a:hover{
 }
 #MenuBtn {      /*qajo menubar anash SPOBON*/
     font-size:2.5rem;       
-    color: var(--main);
+    color: black;
     cursor: pointer;
     display: none;
 }
@@ -164,14 +174,16 @@ header .navbar a:hover{
     text-align: center;
 }
 .home h3{
+    width: 100%;
     font-size: 5.5vw;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-weight:200;
     position: relative;
+    color: #717171;
 }
 .home img{
     width: 100%;
-    margin-top: -20rem;
+    margin-top: -23rem;
     /*transition: linear 0.2s;*/
 }
 /*IconsContainer Section startpoint (nashta mujna me bo edhe me bootstrap)*/
@@ -218,6 +230,317 @@ header .navbar a:hover{
 /*VEHICLE SECTION START*/
 .vehicle{
     margin-bottom: 200px;
+    background: white;
+}
+.VehiclesSlider{
+    padding-bottom: 4rem;
+}
+.VehiclesSlider .box{
+    text-align: center;
+}
+.vehicle img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.98;
+    transform: scale(0.8);
+}
+.VehiclesSlider .swiper-slide-active img{
+    transform: scale(1); 
+    opacity: 0.9;
+}
+/*.VehiclesSlider .box .content{ /* koment niher se po heket teksti mrena span????
+    padding-top: 0.8rem;
+    transform:scale(0);
+}
+*/
+.VehiclesSlider .swiper-slide-active content{
+    transform: scale(1);
+}
+.VehiclesSlider .box .content h3{ /*New Models*/
+    font-size: 2.5rem;
+}
+.VehiclesSlider .box .content .price{ /*qajo $100,000*/
+    color: var(--main);
+    font-weight: 600;
+    padding: 1rem 0;
+    font-size: 2.2rem;
+}
+.VehiclesSlider .box .content .price span{ /*qajo Price:*/
+    color: #ff0019;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.VehiclesSlider .box .content p{ /*qato spans mrena paragrafit*/
+    font-size: 1.6rem;
+    color: black;
+    padding: 1rem 0;
+    padding-top: 1.5rem;
+    border-top: var(--border);
+}
+.VehiclesSlider .box .content span{
+    color: blue;
+    font-size: 1rem;
+    padding: 0 0.5rem;
+}.swiper-pagination-bullet-active{ /*ngjyra e qatyne blue circleve posht kerreve*/
+    background-color: var(--main);
+}
+
+/*Featured Section Start*/
+.feature{
+    margin-bottom: 200px;
+}
+.feature img{
+    width: 100%;
+    height: 15rem;
+}
+.FeatureSlider {
+    padding: 1rem;
+    padding-bottom: 4rem;
+
+}
+.FeatureSlider .box{
+    padding: 2rem;
+    text-align: center;
+    border: var(--border);
+    border-radius: 0.5rem;
+    box-shadow:var(--box_shadow);
+}
+.feature .box:hover img{
+    transform: scale(1.08);
+}
+.feature .box .content h3{
+    font-size: 1.5rem;
+}
+.feature .box .content .stars{
+    padding: 1rem 0;
+}
+.feature .box .content .stars i{ 
+    font-size: 1rem;
+}
+.feature .price{
+    font-size: 1.6rem;
+}
+
+
+/*SERVICES SECTION STARTPOINT*/
+.services{
+    margin-bottom: 200px;
+}
+.services  .boxContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+.services .boxContainer .box{
+    box-shadow: var(--box_shadow);
+    border: var(--border);
+    border-radius:0.5rem;
+    padding:1rem;
+    text-align: center;
+    cursor: pointer;
+}
+.services .boxContainer .box:hover{
+    background: #000;
+    color: #fff;
+}
+.services .boxContainer .box i{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    line-height: 6rem;
+    background: mintcream;
+    color: #000;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+.services .boxContainer .box h3{
+    font-size: 2rem;
+}
+.services .boxContainer .box p{
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+/*REVIEW SECTION START*/
+.review{
+    margin-bottom: 200px;
+}
+.ReviewSlider{
+    padding-bottom: 3rem;
+}
+.ReviewSlider .box{
+    padding: 2rem;
+    text-align: center;
+    opacity: 0.5;
+    margin: 2rem 0;
+    transform: scale(0.8); 
+}
+.ReviewSlider .swiper-slide-active{
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: var(--box_shadow);
+    border: var(--border);
+    border-radius: 0.5rem;
+}
+/*
+.ReviewSlider .box img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}*/
+.review img{
+    width: 50%;
+    height: 70%;
+}
+.ReviewSlider .box .content p{
+    font-size: 1.2rem;
+    padding: 1rem 0;
+}
+.ReviewSlider .box .content h3{
+    font-size: 1.8rem;
+    padding-bottom: 0.5rem;
+}
+.ReviewSlider .box .content .stars i{
+    font-size: 1.4rem;
+    color: red;
+}
+
+/*NEWS LETTER SECTION START*/
+.newsletter{
+    background: url(./images/newsletter.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.newsletter h3{
+    color: #fff;
+    font-size: 3rem;
+}
+.newsletter p{
+    font-size: 1.5rem;
+    color: black;
+    padding: 1rem 0;
+}
+.newsletter form{
+    height: 5rem;
+    max-width: 60rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: var(--box_shadow);
+    display: flex;
+    margin: 1rem auto;
+    overflow:hidden;
+}
+.newsletter form input[type="email"]{
+    height: 100%;
+    width: 100%;
+    padding: 0 2rem;
+    font-size: 1.6rem;
+    text-transform: none;
+}
+.newsletter form input[type="submit"]{
+   font-size:1.7rem;
+   height: 100%;
+   width: 17rem;
+  background: dimgray;
+   cursor: pointer;
+}
+
+/*CONTACT FORM START*/
+.contact {
+    margin-bottom: 200px;
+}
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.contact iframe{
+    flex: 1 1 42rem;
+    width: 100%;
+    padding: 2rem;
+    box-shadow: var(--box_shadow);
+    border: var(--border);
+    border-radius:0.5rem;
+}
+.contact form {
+    flex: 1 1 42rem;
+    padding: 2rem;
+    box-shadow: var(--box_shadow);
+    border: var(--border);
+    text-align: center;
+    border-radius: 0.5rem;
+}
+.contact h3{
+    font-size: 2.4rem;
+    padding-bottom: 1rem;
+}
+.contact form .box{
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 1rem 1.2rem;
+    text-transform: none;
+    border: var(--border);
+    font-size: 1.5rem;
+    margin: 0.7rem 0;
+}
+.contact form textarea{
+    resize: none;
+    height: 18rem;
+}
+
+/*FOOTER START*/
+footer{
+    background: darkgrey;
+    padding: 2rem;
+    text-align: center;
+}
+footer a{
+    color: #fff;
+    font-size: 2.1rem;
+}
+
+/*THEME TOOGLE*/
+.themeToggle{
+    position: fixed;
+    top: 10rem;
+    right: -20rem;
+    background: #000;
+    text-align: center;
+    width: 20rem;
+    z-index: 1000;
+}
+.themeToggle.active{
+    right: 0;
+}
+.themeToggle h3{
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.themeToggle .buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap:1rem;
+    padding: 1rem;
+}
+.themeToggle .themeBtn{
+    height: 5rem;
+    width: 5rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.themeToggle .ToggleBtn i{
+    color: #fff;
+    font-size: 3rem;
+    animation: spin 1.5s linear infinite;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(365deg);
+    }
 }
 
 /*MEDIA QUERY*/
@@ -268,4 +591,106 @@ header .navbar a:hover{
     html{
         font-size: 50%;
     }
+    .heading{
+        font-size: 2.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+/*SLIDESHOW I FOTOVE*/
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }

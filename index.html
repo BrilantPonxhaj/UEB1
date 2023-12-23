@@ -5,25 +5,29 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Dealership</title>
-   
+    <!--SWIPER JS-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!--STYLESHEET I KTIJ PAGE-->
     <link rel="stylesheet" href="style.css">
 </head>
 <body> 
+
+
   <!--HEADER/NAVBAR start-->
 <header>
     <div id="MenuBtn" class="fas fa-bars"></div>
-    <a href="#" class="logo"><span>Car</span>Dealership</a>
+    <a href="#" class="logo"><span>Motor</span>Empire</a>
     <nav class="navbar">
         <a href="#Home">Home</a>
         <a href="#Vehicle">Vehicles</a>
+        <a href="#Featured">Featured</a>
         <a href="#Services">Services</a>
         <a href="#Review">Review</a>
         <a href="#Contact">Contact</a>
     </nav>
-
 <div id="LoginBtn">
     <button class="btn">Login</button>
-    <i class="fa fa-bars"></i>
+    <i class="fas fa-bars"></i>
 </div>
 </header>
 
@@ -45,14 +49,16 @@
 </form>
 </div>
 
+
 <!--HOME SECTION startpoint-->
 <section id="Home" class="home">
-    <h3 data-speed="-2" class="homeParallaxEffect">Dealership</h3>
-    <img data-speed="5" class="home" src="https://i.pinimg.com/1200x/8a/d0/a5/8ad0a55f4693871099296f7b5298049b.jpg" alt="Transform">
+    <h3 data-speed="-2" class="homeParallaxEffect">MotorEmpire</h3>
+    <img data-speed="5" class="home" src="images/interior.avif" alt="Transform">
     <a href="#" class="btn">View Cars</a>
 </section>
 
-<!--ICONS CONTAINER START (kishim mujt me bo edhe me bootstrap)-->
+
+<!--ICONS CONTAINER START (kishim mujt me bo edhe me bootstrap amo mir osht qishtu veq tkishin bo ikonat)-->
 <section class="iconsContainer">
     <div class="icons">
         <i class="fas fa-home"></i>
@@ -82,31 +88,484 @@
             <p>New Launches</p>
         </div>
     </div>
-
-
 </section>
 
+
 <!--VEHICLE SECTION START-->
+<!--
 <section id="Vehicle" class="vehicle">
     <h1 class="heading">Popular Vehicles</h1>
     <div class="swiper VehiclesSlider">
         <div class="swiper-wrapper">
             <div class="swiper-slide box">
-                <img src="" alt="">
+                <img src="images/bmwzez.jpg" alt="">
+                <div class="content">
+                    <h3>NewModels</h3>
+                    <div class="price"><span>Price: </span>
+                    $100,000</div>
+                    <p>
+                        <span class="fas fa-circle"></span>2022
+                        <span class="fas fa-circle"></span>Automatic
+                        <span class="fas fa-circle"></span>Electric
+                        <span class="fas fa-circle"></span>200mph
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 </section>
+-->
 
 
 
+<!--SLIDESHOW I FOTOVE -->
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/bmwzez.jpg" style="width:100%">
+      <div class="text">BMW M4 CSL</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/bmwred.jpg" style="width:100%">
+      <div class="text">BMW M4 Coupe 50 Jahre</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/bmwgrey.jpg" style="width:100%">
+      <div class="text">BMW M4 Edition 50 Jahre</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
 
 
+<!--VEHICLE SECTION START-->
+    <section id="Vehicle" class="vehicle">
+        <h1 class="heading">Popular Vehicles</h1>
+        <div class="swiper VehiclesSlider">
+            <div class="swiper-wrapper">
 
+                <div class="swiper-slide box">
+                    <img src="images/vehiclesbmw3.webp" alt="Fotoja1">
+                    <div class="content">
+                        <h3>New Models</h3>
+                        <div class="price"><span>Price:</span> $100,000</div>
+                        <p>
+                            <span class="fas fa-circle"></span>2023
+                            <span class="fas fa-circle"></span>Automatic
+                            <span class="fas fa-circle"></span>Electric
+                            <span class="fas fa-circle"></span>180mph
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/vehiclessbmw.webp" alt="Fotoja2">
+                    <div class="content">
+                        <h3>New Models</h3>
+                        <div class="price"><span>Price:</span> $120,000</div>
+                        <p>
+                            <span class="fas fa-circle"></span>2022
+                            <span class="fas fa-circle"></span>Automatic
+                            <span class="fas fa-circle"></span>Electric
+                            <span class="fas fa-circle"></span>250mph
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/vehiclesbmw1.avif" alt="fotoja3">
+                    <div class="content">
+                        <h3>New Models</h3>
+                        <div class="price"><span>Price:</span> $90,000</div>
+                        <p>
+                            <span class="fas fa-circle"></span>2021
+                            <span class="fas fa-circle"></span>Automatic
+                            <span class="fas fa-circle"></span>Petrol
+                            <span class="fas fa-circle"></span>150mph
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/vehiclesbmw2.webp" alt="fotoja4">
+                    <div class="content">
+                        <h3>New Models</h3>
+                        <div class="price"><span>Price:</span> $140,000</div>
+                        <p>
+                            <span class="fas fa-circle"></span>2023
+                            <span class="fas fa-circle"></span>Automatic
+                            <span class="fas fa-circle"></span>Electric
+                            <span class="fas fa-circle"></span>170mph
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/vehiclesbmw.png" alt="Fotoja5">
+                    <div class="content">
+                        <h3>New Models</h3>
+                        <div class="price"><span>Price:</span> $150,000</div>
+                        <p>
+                            <span class="fas fa-circle"></span>2022
+                            <span class="fas fa-circle"></span>Automatic
+                            <span class="fas fa-circle"></span>Electric
+                            <span class="fas fa-circle"></span>200mph
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/vehiclesbmw4.jpg" alt="fotoja6">
+                    <div class="content">
+                        <h3>New Models</h3>
+                        <div class="price"><span>Price:</span>$160,000</div>
+                        <p>
+                            <span class="fas fa-circle"></span>2023
+                            <span class="fas fa-circle"></span>Automatic
+                            <span class="fas fa-circle"></span>Electric
+                            <span class="fas fa-circle"></span>240mph
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div> <!--per do blue circles posht kerreve po sdi pse spo bon-->
+        </div>
+    </section>
+
+<!--Featured Section Start-->
+<section id="Feature" class="feature">
+    <h1 class="heading">Featured Cars</h1>
+    <div class="swiper FeatureSlider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="images/featured1bmw.png" alt="">
+                <div class="content">
+                    <h3>BMW M4 Coupe</h3>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$85,000</div>
+                    <a href="#" class="btn">Buy Now</a>
+
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="images/featuredbmwreplace.avif" alt="">
+                <div class="content">
+                    <h3>BMW i8</h3>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$140,000</div>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="images/featured6.png" alt="">
+                <div class="content">
+                    <h3>BMW 3 Series Sedan M Automobiles</h3>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$60,900</div>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="images/featuredx6comp.png" alt="">
+                <div class="content">
+                    <h3>BMW X6 M Competition</h3>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$128,000</div>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="images/featuredbmwww.png" alt="">
+                <div class="content">
+                    <h3>BMW X2 M35i xDrive</h3>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$60,000</div>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="images/featured4.png" alt="">
+                <div class="content">
+                    <h3>BMW 5 Series Sedan</h3>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$85,000</div>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div> 
+
+            <div class="swiper-slide box">
+                <img src="images/featured5.png" alt="">
+                <div class="content">
+                    <h3>BMW i7 M70</h3>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$169,495</div>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="images/featuredm3.webp" alt="">
+                <div class="content">
+                    <h3>BMW M3 Competition</h3>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$76,995</div>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<!--Services Section Start-->
+<section id="Services" class="services">
+    <h1 class="heading">Our Services</h1>
+    <div class="boxContainer">
+        <div class="box">
+            <i class="fas fa-car"></i>
+            <h3>Car Selling</h3>
+            <p>Discover a world of automotive sophistication as you peruse our extensive inventory, featuring an array of makes and models that epitomize cutting-edge engineering, design, and performance. From sleek sedans to robust SUVs and luxurious sports cars, our diverse range caters to every taste and preference.</p>
+            <button class="btn">Read More</button>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-tools"></i>
+            <h3>Parts Repair</h3>
+            <p>Whether your car requires routine maintenance, diagnostic services, or complex repairs, we offer a comprehensive range of solutions tailored to address each issue with precision. From engine diagnostics and brake repairs to suspension tuning and electrical system troubleshooting, our technicians are adept at handling a diverse array of automotive challenges.</p>
+            <button class="btn">Read More</button>
+        </div>
+        <div class="box">
+            <i class="fas fa-car-crash"></i>
+            <h3>Car Inurance</h3>
+            <p>As part of our commitment to enhancing your insurance experience, we offer a range of additional benefits and discounts. These may include features such as roadside assistance, rental car coverage, and discounts for safe driving habits. Our goal is to add value to your policy while ensuring it remains tailored to your specific needs.</p>
+            <button class="btn">Read More</button>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-car-battery"></i>
+            <h3>Battery Replacement</h3>
+            <p>Recognizing the importance of quality and reliability, we exclusively offer premium replacement batteries from trusted manufacturers. Our selection ensures that your new battery meets or exceeds the specifications of your vehicle, providing consistent and dependable power for your daily journeys.</p>
+            <button class="btn">Read More</button>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-gas-pump"></i>
+            <h3>Oil Change</h3>
+            <p>Adhering to manufacturer-recommended service intervals is a cornerstone of our oil change services. Our technicians are well-versed in the specifications of various vehicle makes and models, ensuring that your oil change is performed in accordance with the guidelines set forth by your vehicle's manufacturer.</p>
+            <button class="btn">Read More</button>
+        </div>
+        <div class="box">
+            <i class="fas fa-headset"></i>
+            <h3>24/7 Support</h3>
+            <p>Our 24/7 support is not limited to problem resolution. We are also here to provide guidance and information about our products and services. Whether you need assistance navigating features, understanding policies, or exploring additional offerings, our team is dedicated to ensuring you have the information you need.</p>
+            <button class="btn">Read More</button>
+        </div>
+    </div>
+</section>
+
+<!--News Letter Section Start-->
+<section class="newsletter">
+    <h3>Subscribe to Our NewsLetter</h3>
+    <p>Don't miss out on the exciting updates and offers we have in store for 
+        you. Subscribe to our newsletter today and embark on a journey of 
+        discovery and connection with MotorEmpire</p>
+        <form action="">
+            <input type="email" required placeholder="Enter Your Email...">
+            <input type="submit" value="Subscribe">
+        </form>
+</section>
+
+
+<!--REVIEW SECTION START-->
+<section id="Review" class="review">
+<h1 class="heading">Client's Review</h1>
+<div class="swiper ReviewSlider">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide box">
+            <img src="images/user1.jpg" alt="">
+            <div class="content">
+                <p>Exemplifies a strong commitment to teamwork, fostering a collaborative environment that enhances overall productivity.</p>
+                <h3>MotorEmpire</h3>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+        <div class="swiper-slide box">
+            <img src="images/user2.jpg" alt="">
+            <div class="content">
+                <p>Highly organized and detail-oriented, ensuring accuracy and precision in all tasks undertaken</p>
+                <h3>MotorEmpire</h3>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+        <div class="swiper-slide box">
+            <img src="images/user3.webp" alt="">
+            <div class="content">
+                <p>A highly motivated team who consistently deliver high-quality results on time.</p>
+                <h3>MotorEmpire</h3>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+        <div class="swiper-slide box">
+            <img src="images/user4.webp" alt="">
+            <div class="content">
+                <p>Demonstrates strong leadership qualities and effectively collaborates with colleagues to achieve common goals.</p>
+                <h3>MotorEmpire</h3>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+        <div class="swiper-slide box">
+            <img src="images/user5.jpg" alt="">
+            <div class="content">
+                <p>Demonstrates a strong sense of initiative and takes ownership of tasks, contributing to the overall success of the team</p>
+                <h3>MotorEmpire</h3>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+        <div class="swiper-slide box">
+            <img src="images/user6.jpg" alt="">
+            <div class="content">
+                <p>Reliable and trustworthy, with a proven track record of meeting and exceeding expectations.</p>
+                <h3>MotorEmpire</h3>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!--CONTACT FORM START-->
+<section id="Contact" class="contact">
+    <h1 class="heading">Contact us</h1>
+    <div class="row">
+            <iframe src="https://www.google.com/maps/place/United+States/@44.2423649,-119.8093025,3z/data=!3m1!4b1!4m6!3m5!1s0x54eab584e432360b:0x1c3bb99243deb742!8m2!3d37.09024!4d-95.712891!16zL20vMDljN3cw?entry=ttu" frameborder="0"></iframe>
+            <form action="">
+                <h3>Book Appointment</h3>
+                <input type="text" placeholder="Your Name" required class="box">
+                <input type="email" placeholder="Your Email" required class="box">
+                <textarea class="box" required placeholder="Your Message" name="" id="" cols="30" rows="10"></textarea>
+                <button class="btn">Send</button>
+        </form>
+    </div>
+</section>
+
+<!--FOOTER START-->
+<footer>
+    <a href="#">&copy;MotorEmpire</a>
+</footer>
+
+<!--THEME TOGGLE-- NI BUTTON PER ME ZGJEDH CILEN NGJYR DON MI PARAQIT BUTONAT TJERE-->
+<div class="themeToggle">
+    <div class="ToggleBtn">
+        <i class="fas fa-cog"></i>
+    </div>
+    <h3>Choose Color</h3>
+    <div class="buttons">
+        <div class="themeBtn" style="background:#0011ff"></div>
+        <div class="themeBtn" style="background:#ffb404"></div>
+        <div class="themeBtn" style="background:#2bff00"></div>
+        <div class="themeBtn" style="background:#fc00dbe6"></div>
+        <div class="themeBtn" style="background:#cb5805"></div>
+        <div class="themeBtn" style="background:#ff041d"></div>
+
+    </div>
+</div>
 
 
 <!--SWIPER JS-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <!--Scripta per JS-->
 <script src="index.js"></script>
 </body>
