@@ -62,7 +62,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    padding: 1.5rem 9%;
+    padding: 2rem 9%;
     background: #fff;
     box-shadow: var(--box_shadow);
     display: flex;
@@ -92,14 +92,14 @@ header .navbar a:hover{
 #LoginBtn i{
     color: var(--main);
     font-size: 2.5rem;
-    display:inline-block;
-    /*font-weight: 900;*/
-}
-#MenuBtn {      /*qajo menubar anash SPOBON*/
-    font-size:2.5rem;       
-    color: black;
-    cursor: pointer;
     display: none;
+    font-weight: 900;
+}
+#MenuBtn {      /*qajo menubar anash*/
+    font-size:2.5rem;       
+    color: dimgray;
+    cursor: pointer;
+    display: inline-block;
 }
 
 /*LOGIN FORM CONTAINER*/
@@ -117,7 +117,6 @@ header .navbar a:hover{
 }
 .loginFormContainer.active{
     top: 0;
-
 }
 .loginFormContainer form{
     margin: 2rem;
@@ -186,7 +185,7 @@ header .navbar a:hover{
     margin-top: -23rem;
     /*transition: linear 0.2s;*/
 }
-/*IconsContainer Section startpoint (nashta mujna me bo edhe me bootstrap)*/
+/*IconsContainer Section startpoint (nashta mujna me bo edhe me bootstrap po ska nevoj se super osht qishtu)*/
 .iconsContainer {
     /*margin-bottom: 200px;*/
     display: grid;
@@ -278,7 +277,7 @@ header .navbar a:hover{
     border-top: var(--border);
 }
 .VehiclesSlider .box .content span{
-    color: blue;
+    color: rgb(64, 63, 63);
     font-size: 1rem;
     padding: 0 0.5rem;
 }.swiper-pagination-bullet-active{ /*ngjyra e qatyne blue circleve posht kerreve*/
@@ -557,13 +556,13 @@ footer a{
 }
 @media(max-width:760px){  /*kur e bon inspect deri sa t arrin 760px menubtn nuk shfaqet*/
     #MenuBtn{
-        display: inline-block;
-        cursor: pointer;
+        display: initial;
+        
     }
     .fa-times{
         transform:rotate(365deg);
     }
-    .header .navbar{
+    header .navbar{
         position: absolute;
         top: 99%;
         left: 0;
@@ -572,7 +571,7 @@ footer a{
         background:#fff;
         clip-path: polygon(0 0,100%,0,100% 0,0 0);
     }
-    header .navbar.action{
+    header .navbar.active{
         clip-path: polygon(0 0,100% 0,100% 100%, 0% 100%);
     }
     header .navbar a{
