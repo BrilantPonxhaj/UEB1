@@ -3,11 +3,11 @@
 <head> 
 	<meta charset="utf-8"> 
 	<title>Custom Price Range Slider</title> 
-	<link rel="stylesheet" href="style.css"> 
+	<link rel="stylesheet" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Custom Price Range Slider</title>
     <style>
-        /* Style.css */
+        /* internal style per qit pjese, pse jo? */
 * { 
 	margin: 0; 
 	padding: 0; 
@@ -23,35 +23,31 @@ body {
 } 
 
 .main { 
-	background-color: #fff; 
+	background-color: rgb(221, 186, 186); 
 	border-radius: 15px; 
-	box-shadow: 0 0 20px
-		rgba(0, 0, 0, 0.2); 
+	box-shadow: 0 0 20px rgba(105, 18, 18, 0.2); 
 	padding: 20px; 
 	transition: transform 0.2s; 
-	width: 600px; 
+	width: 650px; 
 } 
-
 .main:hover { 
-	transform: scale(1.05); 
+	transform: scale(1.15); 
 } 
-.gfg { 
-	display: flex; 
+.gox { 
+	display:flex; 
 	align-items: center; 
 	justify-content: center; 
 	font-size: 24px; 
 	font-weight: 600; 
-	color: red; 
+	color: purple; 
 } 
-
 .custom-wrapper { 
 	margin: 0; 
 	width: 70%; 
 	padding: 0px 25px 40px; 
 	position: relative; 
 	left: 63px; 
-} 
-
+}
 .header h2 { 
 	font-size: 30px; 
 	color: red; 
@@ -59,23 +55,19 @@ body {
 	justify-content: center; 
 	padding: 20px; 
 } 
-
 /* Styles for the price input container */
 .price-input-container { 
 	width: 100%; 
 } 
-
 .price-input .price-field { 
 	display: flex; 
 	margin-bottom: 22px; 
 } 
-
 .price-field span { 
 	margin-right: 10px; 
 	margin-top: 6px; 
 	font-size: 17px; 
 } 
-
 .price-field input { 
 	flex: 1; 
 	height: 35px; 
@@ -110,7 +102,6 @@ input::-webkit-inner-spin-button {
 	background: #e4e4e4; 
 	border-radius: 5px; 
 } 
-
 .slider-container .price-slider { 
 	height: 100%; 
 	left: 25%; 
@@ -122,8 +113,7 @@ input::-webkit-inner-spin-button {
 
 .range-input { 
 	position: relative; 
-} 
-
+}
 .range-input input { 
 	position: absolute; 
 	width: 100%; 
@@ -131,9 +121,10 @@ input::-webkit-inner-spin-button {
 	background: none; 
 	top: -5px; 
 	pointer-events: none; 
-	cursor: pointer; 
+	cursor: pointer;
 	-webkit-appearance: none; 
 } 
+
 /* STYLE PER SLIDERTHUMB */
 input[type="range"]::-webkit-slider-thumb { 
 	height: 18px; 
@@ -155,13 +146,11 @@ input[type="range"]::-webkit-slider-thumb {
 		left: 0; 
 		padding: 0 10px; 
 	} 
-
 	.projtitle { 
 		width: 100%; 
 		position: relative; 
 		right: 26px; 
 	} 
-
 	.price-input { 
 		flex-direction: column; 
 		align-items: center; 
@@ -176,14 +165,12 @@ input[type="range"]::-webkit-slider-thumb {
 
 <body> 
 	<div class="main"> 
-		<div class="gfg"> 
-		</div> 
+		<div class="gox"></div> 
 		<div class="custom-wrapper"> 
 
 			<div class="header"> 
 				<h2 class="projtitle">Price Range Slider</h2> 
 			</div> 
-
 			<div class="price-input-container"> 
 				<div class="price-input"> 
 					<div class="price-field"> 

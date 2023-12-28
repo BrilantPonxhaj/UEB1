@@ -190,11 +190,10 @@ const rangeInputvalue =
 	document.querySelectorAll(".range-input input"); 
 
 // Price gap
-let priceGap = 500; 
+let priceGap = 5000; 
 
 // eventlisteners per price input elements 
-const priceInputvalue = 
-	document.querySelectorAll(".price-input input"); 
+const priceInputvalue = document.querySelectorAll(".price-input input"); 
 for (let i = 0; i < priceInputvalue.length; i++) { 
 	priceInputvalue[i].addEventListener("input", e => { 
 
@@ -210,10 +209,10 @@ for (let i = 0; i < priceInputvalue.length; i++) {
 		} 
 
 		// validimi i vlerave inpute
-		if (maxp > 10000) { 
-			alert("maximum price cannot be greater than 10000"); 
-			priceInputvalue[1].value = 10000; 
-			maxp = 10000; 
+		if (maxp > 400000) { 
+			alert("maximum price cannot be greater than 400000"); 
+			priceInputvalue[1].value = 400000; 
+			maxp = 400000; 
 		} 
 
 		if (minp > maxp - priceGap) { 
