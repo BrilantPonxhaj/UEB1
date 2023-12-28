@@ -66,6 +66,7 @@ body {
 	margin-right: 10px; 
 	margin-top: 6px; 
 	font-size: 17px; 
+    font-weight: bold;
 } 
 .price-field input { 
 	flex: 1; 
@@ -104,7 +105,7 @@ input::-webkit-inner-spin-button {
 	right: 15%; 
 	position: absolute; 
 	border-radius: 5px; 
-	/*background: red; */
+	background: red;
 } 
 
 .range-input { 
@@ -114,7 +115,7 @@ input::-webkit-inner-spin-button {
 	position: absolute; 
 	width: 100%; 
 	height: 5px; 
-	background: none; 
+	background: none;
 	top: -5px; 
 	pointer-events: none; 
 	cursor: pointer;
@@ -171,23 +172,22 @@ input[type="range"]::-webkit-slider-thumb {
 				<div class="price-input"> 
 					<div class="price-field"> 
 						<span>Minimum Price</span> 
-						<input type="number" class="min-input" value="65000"> 
+						<input type="number" class="min-input" value="90000"> 
 					</div> 
 					<div class="price-field"> 
 						<span>Maximum Price</span> 
-						<input type="number" class="max-input" value="300000"> 
+						<input type="number" class="max-input" value="350000"> 
 					</div> 
 				</div> 
 				<div class="slider-container"> 
-					<div class="price-slider"> 
-					</div> 
+					<div class="price-slider"></div> 
 				</div> 
 			</div> 
 
 			<!-- Slider -->
 			<div class="range-input"> 
-				<input type="range" class="min-range" min="0" max="400000" value="65000" step="1"> 
-				<input type="range" class="max-range" min="0" max="400000" value="300000" step="1"> 
+				<input type="range" class="min-range" min="0" max="400000" value="90000" step="1"> 
+				<input type="range" class="max-range" min="0" max="400000" value="350000" step="1"> 
 			</div> 
 		</div> 
 	</div> 
