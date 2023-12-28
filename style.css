@@ -99,7 +99,7 @@ header .navbar a:hover{
     font-size:2.5rem;       
     color: dimgray;
     cursor: pointer;
-    display: inline-block;
+    display: none;
 }
 
 /*LOGIN FORM CONTAINER*/
