@@ -183,22 +183,22 @@ document.querySelectorAll(".themeToggle .themeBtn").forEach((btn)=> {
 
 
 
-// KodiJS    per PRICERANGE
+// KodiJS per PRICERANGE
 const rangevalue = 
 	document.querySelector(".slider-container .price-slider"); 
 const rangeInputvalue = 
 	document.querySelectorAll(".range-input input"); 
 
-// Set the price gap 
+// Price gap
 let priceGap = 500; 
 
-// Adding event listners to price input elements 
+// eventlisteners per price input elements 
 const priceInputvalue = 
 	document.querySelectorAll(".price-input input"); 
 for (let i = 0; i < priceInputvalue.length; i++) { 
 	priceInputvalue[i].addEventListener("input", e => { 
 
-		// Parse min and max values of the range input 
+		// analizo max dhe min
 		let minp = parseInt(priceInputvalue[0].value); 
 		let maxp = parseInt(priceInputvalue[1].value); 
 		let diff = maxp - minp 
@@ -209,7 +209,7 @@ for (let i = 0; i < priceInputvalue.length; i++) {
 			minp = 0; 
 		} 
 
-		// Validate the input values 
+		// validimi i vlerave inpute
 		if (maxp > 10000) { 
 			alert("maximum price cannot be greater than 10000"); 
 			priceInputvalue[1].value = 10000; 
@@ -226,8 +226,8 @@ for (let i = 0; i < priceInputvalue.length; i++) {
 			} 
 		} 
 
-		// Check if the price gap is met 
-		// and max price is within the range 
+		// kqyre niher nese po pershtatet pricegap 
+		// edhe max price a osht within range
 		if (diff >= priceGap && maxp <= rangeInputvalue[1].max) { 
 			if (e.target.className === "min-input") { 
 				rangeInputvalue[0].value = minp; 
@@ -243,7 +243,7 @@ for (let i = 0; i < priceInputvalue.length; i++) {
 		} 
 	}); 
 
-	// Add event listeners to range input elements 
+	// prap eventlisteners per range input
 	for (let i = 0; i < rangeInputvalue.length; i++) { 
 		rangeInputvalue[i].addEventListener("input", e => { 
 			let minVal = 
@@ -253,10 +253,10 @@ for (let i = 0; i < priceInputvalue.length; i++) {
 
 			let diff = maxVal - minVal 
 			
-			// Check if the price gap is exceeded 
+			// a kalon pricegap
 			if (diff < priceGap) { 
 			
-				// Check if the input is the min range input 
+				// kqyre nese inputi osht min range
 				if (e.target.className === "min-range") { 
 					rangeInputvalue[0].value = maxVal - priceGap; 
 				} 
@@ -266,7 +266,7 @@ for (let i = 0; i < priceInputvalue.length; i++) {
 			} 
 			else { 
 			
-				// Update price inputs and range progress 
+				// mi bo update price inputs 
 				priceInputvalue[0].value = minVal; 
 				priceInputvalue[1].value = maxVal; 
 				rangevalue.style.left = 
