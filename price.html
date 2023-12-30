@@ -32,6 +32,12 @@ body {
 .main:hover { 
 	transform: scale(1.25); 
 } 
+.backvideo {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
 .gox { 
 	display:flex; 
 	align-items: center; 
@@ -161,6 +167,11 @@ input[type="range"]::-webkit-slider-thumb {
 </head> 
 
 <body> 
+	<div class="hero">
+		<video autoplay loop muted plays-inline class="backvideo">
+			<source src="videos/pexels-emre-vonal-14481683 (1440p).mp4" type="video/mp4">
+		</video>
+	</div>
 	<div class="main"> 
 		<div class="gox"></div> 
 		<div class="custom-wrapper"> 
