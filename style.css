@@ -507,6 +507,14 @@ footer a{
     color: #fff;
     font-size: 2.1rem;
 }
+table{
+    border-spacing: 10px; /* Kontrollon hapësirën midis qelizave */
+    border-collapse: separate; /* Siguron që qelizat të jenë të ndara */
+}
+
+table tr td{
+    padding: 5px 5px 5px 0;
+}
 
 /*THEME TOOGLE*/
 .themeToggle{
