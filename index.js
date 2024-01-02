@@ -1,7 +1,7 @@
 let MenuBtn = document.querySelector("#MenuBtn");
 let NavBar = document.querySelector(".navbar");
 
-MenuBtn.onclick=()=>{
+MenuBtn.onclick= () =>{
     MenuBtn.classList.toggle("fa-times");
     NavBar.classList.toggle("active");
 };
@@ -30,7 +30,7 @@ document.querySelector(".home").onmousemove = (e) => {
        
 
         el.style.transform=`translateX(${Y}px) translateY(${X}px)`;
-    });
+     });
 };
 document.querySelector(".home").onmouseleave = (e) => {
     document.querySelectorAll(".homeParallaxEffect").forEach((el) => {

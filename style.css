@@ -9,7 +9,7 @@ html::-webkit-scrollbar{
 }
 html::-webkit-scrollbar-thumb{
     background: var(--main);
-}
+} 
 html::-webkit-scrollbar-track{
     background: black;
 }
@@ -458,7 +458,7 @@ header .navbar a:hover{
 .contact {
     margin-bottom: 200px;
 }
-.contact .row{
+.contact .row {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
