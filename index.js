@@ -162,7 +162,7 @@ var swiper = new Swiper(".ReviewSlider", {
     }
 });
 
-//THEME TOGGLE
+THEME TOGGLE
 let ThemeToggle = document.querySelector(".themeToggle");
 let ToggleBtn = document.querySelector(".ToggleBtn");
 
@@ -177,7 +177,26 @@ document.querySelectorAll(".themeToggle .themeBtn").forEach((btn)=> {
         document.querySelector(":root").style.setProperty("--main",color);
     };
 });
-
+/* I NJEJTI SEN SIKUR QIKY  NALT VEQ PROVE N JQUERY
+$(document).ready(function () {
+    let $ThemeToggle = $(".themeToggle");
+    let $ToggleBtn = $(".ToggleBtn");
+  
+    $ToggleBtn.click(function () {
+      $ThemeToggle.toggleClass("active");
+      // Assuming Mwnu and NavBar are jQuery objects, you need to use .removeClass() on them
+      Mwnu.removeClass("fa-times");
+      NavBar.removeClass("active");
+    });
+  
+    $(".themeToggle .themeBtn").click(function () {
+      let color = $(this).css("background-color");
+      // Use .css() to set a custom property on :root
+      $(":root").css("--main", color);
+    });
+  });
+  */
+  
 
 
 
