@@ -729,6 +729,12 @@ img {vertical-align: middle;}
   animation-duration: 1.5s;
 }
 
+/* statistics page */
+.statistikat{
+    color: black;
+    align-items: center;
+}
+
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
