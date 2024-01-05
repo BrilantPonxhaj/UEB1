@@ -728,6 +728,24 @@ img {vertical-align: middle;}
   animation-name: fade;
   animation-duration: 1.5s;
 }
+/* Statistics */
+/* statistics page style */
+.statistics h3{
+    text-align: center;
+    color: rgb(41, 40, 40);
+    font-size: 20px;
+}
+
+.statistics a h4{
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    color: rgba(58, 73, 119, 0.774);
+}
+
+.statistics-linktxt:hover{
+    text-decoration: underline;
+}
 
 @keyframes fade {
   from {opacity: .4} 
