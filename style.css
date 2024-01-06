@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,400;1,500&display=swap");
 :root {
-    --main:#ff0019;
+    --main:#0c8231;
     --border:0.2rem solid rgba(0,0,0,0.5);
     --box_shadow:0 0.5rem 1rem rgba(0,0,0,0.8);
 }
@@ -29,6 +29,11 @@ html::-webkit-scrollbar-track{
 }
 section{
     padding: 2rem 9%;
+    /*background-color:lightgray;*/
+}
+.home{
+    padding: 0%;
+    height: 850px;
     /*background-color:lightgray;*/
 }
 html {
@@ -80,7 +85,7 @@ header .logo span{
 header .navbar a{
     font-size: 1.8rem;
     color: #000;
-    margin: 0.1rem;
+    margin: 2rem;
     justify-content: space-between;
 }
 header .navbar a:hover{
@@ -228,7 +233,7 @@ header .navbar a:hover{
 
 /*VEHICLE SECTION START*/
 .vehicle{
-    margin-bottom: 200px;
+    margin-bottom: 50px;
     background: white;
 }
 .vehicle .h3{
@@ -294,7 +299,7 @@ header .navbar a:hover{
 
 /*Featured Section Start*/
 .feature{
-    margin-bottom: 200px;
+    margin-bottom: 50px;
 }
 .feature img{
     width: 100%;
@@ -331,12 +336,13 @@ header .navbar a:hover{
 
 /*SERVICES SECTION STARTPOINT*/
 .services{
-    margin-bottom: 200px;
+    margin-bottom: 50px;
 }
 .services  .boxContainer{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
     gap: 1.5rem;
+    
 }
 .services .boxContainer .box{
     box-shadow: var(--box_shadow);
@@ -370,7 +376,7 @@ header .navbar a:hover{
 
 /*REVIEW SECTION START*/
 .review{
-    margin-bottom: 200px;
+    margin-bottom: 50px;
 }
 .ReviewSlider{
     padding-bottom: 3rem;
@@ -456,7 +462,7 @@ header .navbar a:hover{
 
 /*CONTACT FORM START*/
 .contact {
-    margin-bottom: 200px;
+    margin-bottom: 50px;
 }
 .contact .row {
     display: flex;
@@ -505,7 +511,7 @@ footer{
 }
 footer a{
     color: #fff;
-    font-size: 2.1rem;
+    font-size: 15px;
 }
 .footer-table {
     width: 100%;
@@ -518,8 +524,8 @@ footer a{
     vertical-align: top;
 }
 
-h4 {
-    color: #ffcc00;
+h2 {
+    color:#000;
 }
 
 p {
@@ -534,6 +540,7 @@ ul {
 a {
     color: #fff;
     text-decoration: none;
+        font-size: 10px;
 }
 
 a:hover {
@@ -621,7 +628,7 @@ a:hover {
     }
     header .navbar a{
         display: block;
-        margin: 2rem;
+        margin: 50px;
         font-size: 2rem;
         background:#ccc;
         padding: 1rem;
