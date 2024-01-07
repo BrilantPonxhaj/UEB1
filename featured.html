@@ -187,11 +187,21 @@
         </div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    $(document).ready(function() {
-        $('#darkModeToggle').click(function() {
-            $('body').toggleClass('dark-mode');
-        });
+   $(document).ready(function() {
+    $('#darkModeToggle').click(function() {
+        if ($('body').hasClass('dark-mode')) {
+            $('body').removeClass('dark-mode', function() {
+                $('body').fadeIn('slow'); // Fading in the light mode
+            });
+        } else {
+            $('body').fadeOut('slow', function() {
+                $('body').addClass('dark-mode');
+                $('body').fadeIn('slow'); // Fading in the dark mode
+            });
+        }
     });
+});
+
 </script>
 
       
