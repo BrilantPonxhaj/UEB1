@@ -168,7 +168,7 @@ let ToggleBtn = document.querySelector(".ToggleBtn");
 
 ToggleBtn.onclick = () => {
     ThemeToggle.classList.toggle("active");
-    Mwnu.classList.remove("fa-times");
+    Menu.classList.remove("fa-times");
     NavBar.classList.remove("active");
 };
 document.querySelectorAll(".themeToggle .themeBtn").forEach((btn)=> {
@@ -227,6 +227,7 @@ for (let i = 0; i < priceInputvalue.length; i++) {
 
 		// kqyre niher nese po pershtatet pricegap 
 		// edhe max price a osht within range
+
 		if (diff >= priceGap && maxp <= rangeInputvalue[1].max) { 
 			if (e.target.className === "min-input") { 
 				rangeInputvalue[0].value = minp; 
