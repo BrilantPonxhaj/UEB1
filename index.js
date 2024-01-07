@@ -250,7 +250,35 @@ for (let i = 0; i < priceInputvalue.length; i++) {
 			let maxVal = 
 				parseInt(rangeInputvalue[1].value); 
 
-			let diff = maxVal - minVal 
+			let diff = maxVal - minVal;
+
+            console.log("minp:", minp);
+            console.log("maxp:", maxp);
+            console.log("diff:", diff);
+
+            // Filter() funksioni - i filtron invalid price values
+            const validPrices = Array.from(priceInputvalue).filter(input => {
+                const price = parseInt(input.value);
+                return !isNaN(price) && price >= 0 && price <= 400000;
+            });
+            console.log("Valid Prices:", validPrices);
+
+
+            // Map() funksioni - prej ni array kthen ni array tjeter qe e ka length t njejt po vlerat sjon t njejta - osht perdor per mi nxjerr vlerat numerike
+            const priceValues = Array.from(priceInputvalue).map(input => {
+                const price = parseInt(input.value);
+                return isNaN(price) ? 0 : price; // Convert NaN to 0
+            });
+            console.log("Price Values:", priceValues);
+
+
+            // Reduce() funksioni - i akumulon vlerat prej ni array n single value
+            const priceDifference = priceValues.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+            console.log("Price Difference:", priceDifference);
+
+
+  
+  
 			
 			// a kalon pricegap
 			if (diff < priceGap) { 

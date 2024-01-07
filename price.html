@@ -216,6 +216,7 @@ input[type="range"]::-webkit-slider-thumb {
 		</form>
 	  </div>
 	-->	  
+
 	<div class="hero">
 		<video autoplay loop muted plays-inline class="backvideo">
 			<source src="videos/pexels-emre-vonal-14481683 (1440p).mp4" type="video/mp4">
@@ -259,6 +260,42 @@ input[type="range"]::-webkit-slider-thumb {
 	<audio controls autoplay muted>
 		<source src="audios/mixkit-space-soundscape-653.mp3" type="audio/ogg" style="position:fixed;">
 	  </audio>
-	<script src="index.js"></script> 
+
+<!--
+	  <script>
+		// Funksion per mi update prices
+function updatePriceLabels() {
+  const minRangeInput = document.querySelector(".min-range");
+  const maxRangeInput = document.querySelector(".max-range");
+  const minPriceLabel = document.querySelector(".min-price-label");
+  const maxPriceLabel = document.querySelector(".max-price-label");
+
+  try {
+    const minPrice = parseInt(minRangeInput.value);
+    const maxPrice = parseInt(maxRangeInput.value);
+
+    if (isNaN(minPrice) || isNaN(maxPrice)) {
+      throw new Error("Invalid price values. Please enter valid numbers.");
+    }
+
+    minPriceLabel.textContent = `$${minPrice}`;
+    maxPriceLabel.textContent = `$${maxPrice}`;
+  } catch (error) {
+    console.error(error);
+    // You can handle the error here, such as displaying a message to the user.
+  }
+}
+
+// Initial update
+updatePriceLabels();
+
+// eventListeners per range inputs
+	const minRangeInput = document.querySelector(".min-range");
+	const maxRangeInput = document.querySelector(".max-range");
+	minRangeInput.addEventListener("input", updatePriceLabels);
+	maxRangeInput.addEventListener("input", updatePriceLabels);
+
+	  </script>
+	  -->
 </body> 
 </html>
