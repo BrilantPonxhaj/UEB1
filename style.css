@@ -85,7 +85,7 @@ header .logo span{
 header .navbar a{
     font-size: 1.6rem;
     color: #000;
-    margin: 2rem;
+    margin: 0.6rem;
     justify-content: space-between;
 }
 header .navbar a:hover{
@@ -106,6 +106,7 @@ header .navbar a:hover{
     cursor: pointer;
     display: none;
 }
+
 
 /*LOGIN FORM CONTAINER*/
 .loginFormContainer{
@@ -171,6 +172,8 @@ header .navbar a:hover{
     display: block;
     margin: 0.5rem 0;
 }
+
+
 /*HOME Section startpoint*/
 .home {
     padding-top: 10rem;
@@ -190,6 +193,8 @@ header .navbar a:hover{
     margin-top: -23rem;
     /*transition: linear 0.2s;*/
 }
+
+
 /*IconsContainer Section startpoint (nashta mujna me bo edhe me bootstrap po ska nevoj se super osht qishtu)*/
 .iconsContainer {
     /*margin-bottom: 200px;*/
@@ -297,6 +302,7 @@ header .navbar a:hover{
     background-color: var(--main);
 }
 
+
 /*Featured Section Start*/
 .feature{
     margin-bottom: 50px;
@@ -374,6 +380,7 @@ header .navbar a:hover{
     padding: 1rem 0;
 }
 
+
 /*REVIEW SECTION START*/
 .review{
     margin-bottom: 50px;
@@ -419,6 +426,7 @@ header .navbar a:hover{
     color: red;
 }
 
+
 /*NEWS LETTER SECTION START*/
 .newsletter{
     background: url(./images/newsletter.jpg) no-repeat;
@@ -459,6 +467,7 @@ header .navbar a:hover{
   background: dimgray;
    cursor: pointer;
 }
+
 
 /*CONTACT FORM START*/
 .contact {
@@ -502,6 +511,7 @@ header .navbar a:hover{
     resize: none;
     height: 18rem;
 }
+
 
 /*FOOTER START*/
 footer{
@@ -551,6 +561,7 @@ a:hover {
     height: 35px;
     width: 40px;
 }
+
 
 /*THEME TOOGLE*/
 .themeToggle{
@@ -606,6 +617,7 @@ a:hover {
         padding: 2rem;
     }
 }
+
 @media(max-width:760px){  /*kur e bon inspect deri sa t arrin 760px menubtn nuk shfaqet*/
     #MenuBtn{
         display: initial;
@@ -615,7 +627,7 @@ a:hover {
         transform:rotate(365deg);
     }
     header .navbar{
-       display: none;
+        display: none;
         position: absolute;
         top: 99%;
         left: 0;
@@ -630,7 +642,7 @@ a:hover {
     header .navbar a{
         display: block;
         margin: 50px;
-        font-size: 2rem;
+        font-size: 1.8rem;
         background:#ccc;
         padding: 1rem;
     }
@@ -638,6 +650,7 @@ a:hover {
         margin-top: -10rem;
     }
 }
+
 @media(max-width:450px)
 {
     html{
