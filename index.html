@@ -26,7 +26,7 @@
         <a href="#Contact">Contact</a>
         <a href="price.html" target="blank">PriceRange</a>
       </nav>
-      
+
       <div id="LoginBtn">
         <button class="btn">Login</button>
         <i class="fas fa-user"></i>
@@ -44,11 +44,12 @@
         <button class="btn">Submit</button>
         <p>or Login With</p>
         <div class="buttons">
-          <a href="#" class="btn">Google</a>
-          <a href="#" class="btn">Facebook</a>
+          <a href="http://www.gmail.com" target="_blank" class="btn">Google</a>
+          <a href="http://www.facebook.com" target="_blank" class="btn">Facebook</a>
         </div>
       </form>
-    </div>
+    </div>  
+
 
     <!--HOME SECTION startpoint-->
     <section id="Home" class="home">
@@ -56,6 +57,7 @@
       <img data-speed="5" class="home" src="images/firstsection1.jpg" alt="Transform"/>
       <a href="https://www.bmwusa.com/special-offers.html" class="btn" target="_blank">View Cars</a>
     </section>
+
 
     <!--ICONS CONTAINER START (kishim mujt me bo edhe me bootstrap amo mir osht qishtu)-->
     <section class="iconsContainer">
@@ -89,6 +91,7 @@
       </div>
     </section>
 
+
     <!--VEHICLE SECTION START-->
     <!-- MA POSHT OSHT KODI PER KIT PJES
 <section id="Vehicle" class="vehicle">
@@ -113,6 +116,7 @@
     </div>
 </section>
 -->
+
 
     <!--SLIDESHW I FOTOVE -->
     <div class="slideshow-container">
@@ -143,6 +147,7 @@
       <span class="dot" onclick="currentSlide(2)"></span>
       <span class="dot" onclick="currentSlide(3)"></span>
     </div>
+
 
     <!--VEHICLE SECTION START-->
     <section id="Vehicle" class="vehicle">
@@ -238,6 +243,7 @@
       </div>
     </section>
 
+    
     <!--Featured Section Start-->
     <section id="Feature" class="feature">
       <h1 class="heading">Featured Cars</h1>
@@ -625,6 +631,38 @@
         <div class="themeBtn" style="background: #ff041d"></div>
       </div>
     </div>
+
+  <!-- VALIDIMI I FORMES LOGIN DUKE PERDORUR REGEX
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const emailInput = document.getElementById("emailInput");
+          const passwordInput = document.getElementById("passwordInput");
+          const submitButton = document.getElementById("submitButton");
+  
+          // Regular expression for a valid email address
+          const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+  
+          // Event listener to validate the form when the Submit button is clicked
+          submitButton.addEventListener("click", function () {
+              const email = emailInput.value.trim();
+              const password = passwordInput.value;
+  
+              // Validate email using regex
+              if (!emailRegex.test(email)) {
+                  alert("Please enter a valid email address.");
+                  return;
+              }
+  
+              // You can add more password validation logic here if needed
+  
+              // If both email and password are valid, you can proceed with form submission
+              alert("Login successful!");
+              // Replace the alert with your actual form submission logic
+          });
+      });
+  </script>
+  -->
+
 
     <!--SWIPER JS-->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
