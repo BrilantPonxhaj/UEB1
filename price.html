@@ -148,48 +148,58 @@ input[type="range"]::-webkit-slider-thumb {
 	-webkit-appearance: none; 
 } 
 
-@media screen and (max-width: 768px) { 
-	.main { 
+@media screen and (max-width: 768px)
+ { 
+	.main 
+	{ 
 		width: 80%; 
 		margin-right: 5px; 
 	} 
 
-	.custom-wrapper { 
+	.custom-wrapper 
+	{ 
 		width: 100%; 
 		left: 0; 
 		padding: 0 10px; 
 	} 
-	.projtitle { 
+	.projtitle 
+	{ 
 		width: 100%; 
 		position: relative; 
 		right: 26px; 
 	} 
-	.price-input { 
+	.price-input
+	 { 
 		flex-direction: column; 
 		align-items: center; 
 	} 
-	.price-field {
+	.price-field 
+	{
 		margin-bottom: 10px; 
 	} 
 }
+
 @media (min-aspect-ratio:16/9)
 {
-	.backvideo{
+	.backvideo
+	{
 		width: 100%;
 		height: auto;
 	}
 }
+
 @media (max-aspect-ratio:16/9)
 {
-	.backvideo{
+	.backvideo
+	{
 		width: auto;
 		height: 100%;
 	}
 }
 </style>
 </head> 
-
 <body> 
+
 	    <!--HEADER/NAVBAR start-->
 		<header>
 			<div id="MenuBtn" class="fas fa-bars"></div>
@@ -203,11 +213,14 @@ input[type="range"]::-webkit-slider-thumb {
 			  <a href="#Contact">Contact</a>
 			  <a href="price.html" target="blank">PriceRange</a>
 			</nav>
+
 			<div id="LoginBtn">
 			  <button class="btn">Login</button>
 			  <i class="fas fa-user"></i>
 			</div>
+
 		  </header>
+
 
     <!--Login Form Container-i
     <div class="loginFormContainer">
@@ -216,9 +229,12 @@ input[type="range"]::-webkit-slider-thumb {
 		  <h3>User Login</h3>
 		  <input type="email" placeholder="Email" required class="box" />
 		  <input type="password" placeholder="Password" required class="box" />
-		  <p>Forgot your Password? <a href="#">Click Here</a></p>
+		  <p>Forgot your Password? 
+			<a href="#">Click Here</a></p>
 		  <button class="btn">Submit</button>
-		  <p>or Login With</p>
+		  <p>
+			or Login With
+		</p>
 		  <div class="buttons">
 			<a href="#" class="btn">Google</a>
 			<a href="#" class="btn">Facebook</a>
@@ -227,11 +243,13 @@ input[type="range"]::-webkit-slider-thumb {
 	  </div>
 	-->	  
 
+
 	<div class="hero">
 		<video autoplay loop muted plays-inline class="backvideo">
 			<source src="videos/pexels-emre-vonal-14481683 (1440p).mp4" type="video/mp4">
 		</video>
 	</div>
+
 	<div class="main"> 
 		<div class="gox"></div> 
 		<div class="custom-wrapper"> 
@@ -239,16 +257,19 @@ input[type="range"]::-webkit-slider-thumb {
 			<div class="header"> 
 				<h2 class="projtitle">Price Range Slider</h2> 
 			</div> 
+
 			<div class="price-input-container"> 
 				<div class="price-input"> 
 					<div class="price-field"> 
 						<span>Minimum Price</span> 
 						<input type="number" class="min-input" value="90000"> 
 					</div> 
+
 					<div class="price-field"> 
 						<span>Maximum Price</span> 
 						<input type="number" class="max-input" value="350000"> 
 					</div> 
+
 				</div> 
 				<div class="slider-container"> 
 					<div class="price-slider"></div> 

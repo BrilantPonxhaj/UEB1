@@ -56,12 +56,14 @@ html {
     border-radius: 0.5rem;
     border: none;
 }
-.heading{
+.heading
+{
     padding-bottom: 2rem;
     font-size: 4.5rem;
     text-align: center;
 }
-header{
+header
+{
     z-index: 10000;
     position: fixed;
     top: 0;
