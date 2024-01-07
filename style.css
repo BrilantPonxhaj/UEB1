@@ -765,7 +765,7 @@ img {vertical-align: middle;}
 }
 
 
-
+/*KODI PER STYLE PER PJESEN E DARK THEME TOGGLE*/
 body.dark-mode {
     background-color: #333;
     color: #fff;
@@ -775,4 +775,3 @@ body.dark-mode {
     color: black;
 }
 
-/* Add other dark mode styles as needed */
