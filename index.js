@@ -66,6 +66,8 @@ var swiper = new Swiper(".VehiclesSlider", {
         },
     }
 });
+
+
 /* 
 PROVE:
 document.addEventListener("DOMContentLoaded", function () {
@@ -75,6 +77,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 );
 */
+
+
 
 
 /*SLIDESHOW I FOTOVE 1,2,3*/
@@ -105,6 +109,10 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+
+
+
+
 //Swiper JS per slider t featured 
 var swiper = new Swiper(".FeatureSlider", {
     grabCursor:true,
@@ -115,7 +123,7 @@ var swiper = new Swiper(".FeatureSlider", {
         delay:2000,
         disableOnInteraction:false,
     },
-    pagintion: { 
+    pagination: { 
         el: ".swiper-pagination",
         clickable: true,
     },
@@ -134,6 +142,8 @@ var swiper = new Swiper(".FeatureSlider", {
 });
 
 
+
+
 //Swiper JS per Review Slider
 var swiper = new Swiper(".ReviewSlider", {
     grabCursor:true,
@@ -144,7 +154,7 @@ var swiper = new Swiper(".ReviewSlider", {
         delay:2000,
         disableOnInteraction:false,
     },
-    pagintion: { 
+    pagination: { 
         el: ".swiper-pagination",
         clickable: true,
     },
@@ -161,6 +171,9 @@ var swiper = new Swiper(".ReviewSlider", {
         },
     }
 });
+
+
+
 
 //THEME TOGGLE
 let ThemeToggle = document.querySelector(".themeToggle");
@@ -189,13 +202,16 @@ const rangevalue =
 const rangeInputvalue = 
 	document.querySelectorAll(".range-input input"); 
 
+
 // Price gap
 let priceGap = 5000; 
+
 
 // eventlisteners per price input elements 
 const priceInputvalue = document.querySelectorAll(".price-input input"); 
 for (let i = 0; i < priceInputvalue.length; i++) { 
 	priceInputvalue[i].addEventListener("input", e => { 
+
 
 		// analizo max dhe min
 		let minp = parseInt(priceInputvalue[0].value); 
@@ -207,6 +223,7 @@ for (let i = 0; i < priceInputvalue.length; i++) {
 			priceInputvalue[0].value = 0; 
 			minp = 0; 
 		} 
+
 
 		// validimi i vlerave inpute
 		if (maxp > 400000) { 
@@ -225,8 +242,10 @@ for (let i = 0; i < priceInputvalue.length; i++) {
 			} 
 		} 
 
+
 		// kqyre niher nese po pershtatet pricegap 
 		// edhe max price a osht within range
+
 
 		if (diff >= priceGap && maxp <= rangeInputvalue[1].max) { 
 			if (e.target.className === "min-input") { 
@@ -242,6 +261,7 @@ for (let i = 0; i < priceInputvalue.length; i++) {
 			} 
 		} 
 	}); 
+
 
 	// prap eventlisteners per range input
 	for (let i = 0; i < rangeInputvalue.length; i++) { 
@@ -284,7 +304,7 @@ for (let i = 0; i < priceInputvalue.length; i++) {
             
             const warningsElement = document.getElementById("warnings");
 
-            // Inside your event listener logic...
+           
             if (minp < 0) { 
                 // shfaqe ni warning per qmimin minimal qe smunet me u bo ma i vogel se 0
                 warningsElement.innerHTML = "Minimum price cannot be less than 0";
