@@ -268,7 +268,7 @@ for (let i = 0; i < priceInputvalue.length; i++) {
             // Map() funksioni - prej ni array kthen ni array tjeter qe e ka length t njejt po vlerat sjon t njejta - osht perdor per mi nxjerr vlerat numerike
             const priceValues = Array.from(priceInputvalue).map(input => {
                 const price = parseInt(input.value);
-                return isNaN(price) ? 0 : price; // Convert NaN to 0
+                return isNaN(price) ? 0 : price; // convert NaN n 0
             });
             console.log("Price Values:", priceValues);
 
@@ -286,12 +286,12 @@ for (let i = 0; i < priceInputvalue.length; i++) {
 
             // Inside your event listener logic...
             if (minp < 0) { 
-                // Display a warning message for minimum price
+                // shfaqe ni warning per qmimin minimal qe smunet me u bo ma i vogel se 0
                 warningsElement.innerHTML = "Minimum price cannot be less than 0";
-                // Clear the warning after a certain time (optional)
+                // fshije warning after a certain time
                 setTimeout(() => {
                     warningsElement.innerHTML = "";
-                }, 3000); // Clear the warning after 3 seconds (3000 milliseconds)
+                }, 3000); // fshije warnring after 3 seconds (3000 milliseconds)
             }
             
 			
@@ -299,6 +299,7 @@ for (let i = 0; i < priceInputvalue.length; i++) {
 			if (diff < priceGap) { 
 			
 				// kqyre nese inputi osht min range
+
 				if (e.target.className === "min-range") { 
 					rangeInputvalue[0].value = maxVal - priceGap; 
 				} 
@@ -309,6 +310,7 @@ for (let i = 0; i < priceInputvalue.length; i++) {
 			else { 
 			
 				// mi bo update price inputs 
+
 				priceInputvalue[0].value = minVal; 
 				priceInputvalue[1].value = maxVal; 
 				rangevalue.style.left = 
