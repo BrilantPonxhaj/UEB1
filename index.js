@@ -277,8 +277,22 @@ for (let i = 0; i < priceInputvalue.length; i++) {
             console.log("Price Difference:", priceDifference);
 
 
-  
-  
+            setTimeout(() => {
+                rangevalue.style.transition = "1s"; // qitu osht apliku ni 1second transition
+            }, 100); // Animacionet fillojne prej 100 milisekonda delay
+            
+            const warningsElement = document.getElementById("warnings");
+
+            // Inside your event listener logic...
+            if (minp < 0) { 
+                // Display a warning message for minimum price
+                warningsElement.innerHTML = "Minimum price cannot be less than 0";
+                // Clear the warning after a certain time (optional)
+                setTimeout(() => {
+                    warningsElement.innerHTML = "";
+                }, 3000); // Clear the warning after 3 seconds (3000 milliseconds)
+            }
+            
 			
 			// a kalon pricegap
 			if (diff < priceGap) { 
