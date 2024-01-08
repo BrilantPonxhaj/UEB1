@@ -56,6 +56,7 @@ html {
     border-radius: 0.5rem;
     border: none;
 }
+
 .heading
 {
     padding-bottom: 2rem;
@@ -98,8 +99,14 @@ header .navbar a{
 header .navbar a:hover{
     color: var(--main);
 }
+#LoginBtn .btn:hover {
+    background: #000; /* This sets the button background to black on hover */
+    color: #fff; /* This changes the text color to white on hover for better readability */
+}
+
 #LoginBtn .btn{
     margin-top: 0;
+    
 }
 #LoginBtn i{
     color: var(--main);
