@@ -297,6 +297,56 @@ for (let i = 0; i < priceInputvalue.length; i++) {
             const priceDifference = priceValues.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
             console.log("Price Difference:", priceDifference);
 
+            const priceValue = 1234567.89; // Qekjo zevendsohet me ni vler qfare dojm na
+            const formattedPrice = priceValue.toExponential(2); // Formatojm qmimin duke perdor scientific notation me dy shifra pas presjes
+            console.log("Formatted Price:", formattedPrice);
+
+            // Shfaqe qmimin e formatuar ne faqe
+           const priceElement = document.querySelector(".price-element"); //Zevenndso elementin aktual ne html ku don me e shfaq qmimin 
+             priceElement.textContent = formattedPrice.toString(); // E konvertojm qmimin e formatuar ne string dhe e shfaqim ne faqe
+
+
+             function handleErrors() {
+                try {
+                    // Këtu mund të vendosni kodin që mund të shkaktojë gabime
+                    // Për shembull, kontrollo validimin e vlerave
+                    const minRangeInput = document.querySelector(".min-range");
+                    const maxRangeInput = document.querySelector(".max-range");
+                    
+                    const minPrice = parseInt(minRangeInput.value);
+                    const maxPrice = parseInt(maxRangeInput.value);
+            
+                    if (isNaN(minPrice) || isNaN(maxPrice)) {
+                        throw new Error("Invalid price values. Please enter valid numbers.");
+                    }
+            
+                    if (minPrice < 0 || maxPrice > 400000) {
+                        throw new Error("Price values are out of range.");
+                    }
+            
+                    // Të tjera veprime që mund të shkaktojnë gabime
+            
+                    // Nëse nuk ka gabime, ekzekuto kodin këtu
+                    updatePriceLabels();
+                } catch (error)  {
+                    // Kap gabimet dhe trajtoj ato këtu
+                    // Shfaq ose regjistro gabimin për përdoruesin
+                    console.error("Error:", error.message);
+            
+                    // Mund të bëni diçka tjetër për të trajtuar gabimin, për shembull:
+
+                    // - Shfaq një mesazh gabimi për përdoruesin
+
+                    // - Zhbllokoni veprimet e tjera derisa gabimi të korrigjohet
+                    
+                    // - Kthejeni vlerat në një gjendje të sigurtë
+                    
+                    
+                    // - Regjistroni gabimin në një log
+                    
+                }
+            }
+
 
             setTimeout(() => {
                 rangevalue.style.transition = "1s"; // qitu osht apliku ni 1second transition
