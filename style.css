@@ -329,6 +329,7 @@ top:0.75pc;
     transform:scale(0);
 }
 */
+
 .VehiclesSlider .swiper-slide-active content{
     transform: scale(1);
 }
@@ -360,7 +361,8 @@ top:0.75pc;
 }.swiper-pagination-bullet-active{ /*ngjyra e qatyne blue circleve posht kerreve*/
     background-color: var(--main);
 }
-.dropzone {
+.dropzone 
+{
     width: 100px;
     height: 60px;
     border: 2px dashed #ccc; 
@@ -370,7 +372,8 @@ top:0.75pc;
     
 }
 
-#draggable {
+#draggable 
+{
     width: 100px;
     height: 60px;
     background-color: #3498db;
@@ -384,38 +387,48 @@ top:0.75pc;
 }
 
 /*Featured Section Start*/
-.feature{
+
+.feature
+{
     margin-bottom: 50px;
 }
-.feature img{
+.feature img
+{
     width: 100%;
     height: 15rem;
 }
-.FeatureSlider {
+.FeatureSlider 
+{
     padding: 1rem;
     padding-bottom: 4rem;
 
 }
-.FeatureSlider .box{
+.FeatureSlider .box
+{
     padding: 2rem;
     text-align: center;
     border: var(--border);
     border-radius: 0.5rem;
     box-shadow:var(--box_shadow);
 }
-.feature .box:hover img{
+.feature .box:hover img
+{
     transform: scale(1.08);
 }
-.feature .box .content h3{
+.feature .box .content h3
+{
     font-size: 1.5rem;
 }
-.feature .box .content .stars{
+.feature .box .content .stars
+{
     padding: 1rem 0;
 }
-.feature .box .content .stars i{ 
+.feature .box .content .stars i
+{ 
     font-size: 1rem;
 }
-.feature .price{
+.feature .price
+{
     font-size: 1.6rem;
 }
 
@@ -482,6 +495,7 @@ top:0.75pc;
     border: var(--border);
     border-radius: 0.5rem;
 }
+
 /*
 .ReviewSlider .box img{
     height: 7rem;
@@ -489,6 +503,7 @@ top:0.75pc;
     border-radius: 50%;
     object-fit: cover;
 }*/
+
 .review img{
     width: 50%;
     height: 70%;
@@ -609,36 +624,38 @@ footer a{
     color: #070606;
     font-size: 15px;
  } */
+
+
  /* Main footer styling */
  footer {
-    background-color: #060a28; /* Match the footer background color */
-    color: #fff; /* Text color */
-    padding: 20px 0; /* Padding for the footer */
-    font-family: 'Arial', sans-serif; /* Font family (choose appropriately) */
+    background-color: #060a28; 
+    color: #fff; 
+    padding: 20px 0; 
+    font-family: 'Arial', sans-serif; 
   }
   
   /* Footer content styling */
   .footer-content {
     display: flex;
-    justify-content: space-between; /* Distributes space evenly between items */
-    align-items: start; /* Aligns items to the start of the flex container */
-    flex-wrap: wrap; /* Allows items to wrap as needed */
-    max-width: 1200px; /* Adjust based on actual max-width */
-    margin: 0 auto; /* Center the footer content */
+    justify-content: space-between; 
+    align-items: start;  
+    flex-wrap: wrap; 
+    max-width: 1200px; 
+    margin: 0 auto; 
   }
   
   /* Footer section styling */
   .footer-section {
-    margin: 0 10px; /* Adds margin to the left and right of each section */
+    margin: 0 10px; 
     display: flex;
-    flex-direction: column; /* Stacks items vertically */
-    justify-content: flex-start; /* Aligns items to the start of the flex-direction */
+    flex-direction: column; 
+    justify-content: flex-start; 
   }
   
   /* Footer section headers */
   .footer-section h1 {
-    font-size: 22px; /* Adjust font-size as needed */
-    margin-bottom: 15px; /* Space below the headers */
+    font-size: 22px; 
+    margin-bottom: 15px; 
   }
   .footer-sectionbrand-section{
     display: inline;
@@ -649,11 +666,11 @@ footer a{
   .footer-section p,
   .footer-section a {
     font-size: 13p;
-    list-style-type: none; /* Removes default list styling */
-    padding: 0; /* Removes default padding */
-    margin-bottom: 5px; /* Spacing between links */
-    color: #fff; /* Link color */
-    text-decoration: none; /* Removes underline from links */
+    list-style-type: none; 
+    padding: 0; 
+    margin-bottom: 5px; 
+    color: #fff; 
+    text-decoration: none; 
   }
   .social-icons a:hover {
      text-decoration: underline; } 
@@ -665,18 +682,21 @@ footer a{
 
     .social-icons img { 
         margin-top: 10px;
-         width: 50px; /* Adjust size as needed */ 
+         width: 50px; 
          height: auto; 
-         margin-right: 15px; /* Space between icons */ }
+         margin-right: 15px;
+ }
 
-          .social-icons .facebook-icon img{ 
+          .social-icons .facebook-icon img
+          { 
             width: 60px;
-             height: 60px; }
+             height: 60px; 
+            }
   
   /* Footer bottom styling */
   .footer-bottom {
     text-align: center;
-    margin-top: 20px; /* Spacing from the content above */
+    margin-top: 20px; 
     font-size: 14px;
   }
 p, ul {
@@ -695,7 +715,7 @@ ul li a {
 }
 
 ul li a:hover {
-    color: #ff9800; /* Vibrant color on hover */
+    color: #ff9800; 
     text-decoration: underline; /* Underline effect on hover */
 }
 
@@ -707,11 +727,11 @@ ul li a:hover {
 }
 
 .social-links a:hover {
-    color: #ff9800; /* Match hover color with headings */
+    color: #ff9800; 
 }
 
 .fa-brands {
-    font-size: 1.8em; /* Slightly larger icons for better visibility */
+    font-size: 1.8em; 
 }
 
 
