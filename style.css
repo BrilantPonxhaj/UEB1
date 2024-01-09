@@ -170,13 +170,17 @@ header .navbar a:hover{
     color: blue;
     text-decoration: underline;
 }
-#CloseLoginForm{ /*SPO BONNNNNNN NI X ANASH PER ME MBYLL FORMEN*/
-    position: absolute;
-    top: 1.5rem;
-    right: 2.4rem;
-    font-size: 5rem;
-    cursor: pointer;
+.loginFormContainer .close {
+    
+   position: relative; /* Position the close button absolutely */
+   top:-10px;
+ 
+     left:150 px;
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+    font-size: 5rem; /* Adjust the font size as needed */
+    color: #000; /* Change the color if needed */
 }
+
 .loginFormContainer form .buttons{
     display: flex;
     gap: 1rem;

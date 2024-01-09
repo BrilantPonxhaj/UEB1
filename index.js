@@ -12,13 +12,26 @@ window.onscroll = () => {
     ThemeToggle.classList.remove("active");
 }
 
-// LoginFormContainer
-document.querySelector("#LoginBtn").onclick=()=> {
-    document.querySelector(".loginFormContainer").classList.toggle("active");
-};
-document.querySelector("#CloseLoginForm").onclick =()=> {
-    document.querySelector(".loginFormContainer").classList.remove("active");
-}; 
+//LoginForma bashk  me close form
+
+document.addEventListener('DOMContentLoaded', function() {
+    var loginButton = document.querySelector('#LoginBtn');
+    var closeButton = document.querySelector('.loginFormContainer .close');
+    var loginForm = document.getElementById('id01');
+
+    // Event listener to toggle the login form
+    loginButton.addEventListener('click', function() {
+        loginForm.classList.toggle('active');
+    });
+
+    // Event listener to close the login form
+    closeButton.addEventListener('click', function() {
+        loginForm.classList.remove('active');
+    });
+});
+
+
+
  
 
 //HomeParallaxEffect -- me leviz figura kryesore 
@@ -341,9 +354,7 @@ for (let i = 0; i < priceInputvalue.length; i++) {
                     
                     // - Kthejeni vlerat në një gjendje të sigurtë
                     
-                    
                     // - Regjistroni gabimin në një log
-                    
                 }
             }
 
