@@ -276,8 +276,9 @@ top:0.75pc;
     height: 5rem;
     width: 5rem;
     line-height: 3rem;
-    font-size: 4.5rem;
+    font-size: 3rem;
     border-radius: 80%;
+    align-items: center;
 }
 
 .iconsContainer .icons h3{
@@ -322,6 +323,7 @@ top:0.75pc;
     transform: scale(1); 
     opacity: 0.9;
 }
+
 /*.VehiclesSlider .box .content{ /* koment niher se po heket teksti mrena span????
     padding-top: 0.8rem;
     transform:scale(0);
