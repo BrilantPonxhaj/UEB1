@@ -229,6 +229,7 @@ document.querySelectorAll(".themeToggle .themeBtn").forEach((btn)=> {
 
 
 
+
 // KodiJS per PRICERANGE
 const rangevalue = 
 	document.querySelector(".slider-container .price-slider"); 
