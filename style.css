@@ -363,30 +363,7 @@ header .navbar a:hover{
 }.swiper-pagination-bullet-active{ /*ngjyra e qatyne blue circleve posht kerreve*/
     background-color: var(--main);
 }
-.dropzone 
-{
-    width: 100px;
-    height: 60px;
-    border: 2px dashed #ccc; 
-    margin: 20px;
-    /* padding: 10px; */
-    display: inline-block;
-    
-}
 
-#draggable 
-{
-    width: 100px;
-    height: 60px;
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px;
-    cursor: move;
-    text-align: center;
-
-
-    
-}
 
 /*Featured Section Start*/
 
