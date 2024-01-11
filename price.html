@@ -29,16 +29,20 @@ body {
 	padding: 20px; 
 	transition: transform 0.2s; 
 	width: 650px; 
+	margin-top: 200px;
 } 
 .main:hover { 
 	transform: scale(1.09); 
 } 
 .backvideo {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	z-index: -1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
 }
+
 .gox { 
 	display:flex; 
 	align-items: center; 
@@ -197,6 +201,143 @@ input[type="range"]::-webkit-slider-thumb {
 		height: 100%;
 	}
 }
+.footer {
+    position: relative;
+    margin-top: auto;
+    background-color: rgb(142, 134, 134);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+    width: 100%;
+	margin-top: 200px;
+}
+.hArray {
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.hArray > * {
+  display: flex;
+  font-size: 14px;
+}
+.footer-logo img {
+    max-width: 100%;
+    max-height: 48px;
+    height: 100%;
+}
+  .footer-list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: none;
+    text-align: center;
+    margin-left: -40px;
+  }
+  .footer-item {
+    width: auto;
+    margin-left: 40px;
+    margin-bottom: 0;
+  }
+  .footer-item a {
+    color: rgb(255, 255, 255);
+    opacity: 0.5;
+    line-height: 18px;
+    text-decoration: none;
+    text-decoration-style: none;
+  }
+  .footer-list {
+    margin-top: 40px;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    list-style-type: none;
+  }
+  .footer-item a:hover {
+    color: black;
+  }
+  .footer-module {
+    padding: 0 24px;
+    justify-content: end;
+    align-items: end;
+  }
+  .footer-content {
+    display: flex;
+    max-width: 1200px;
+  }
+  .footer-module2 {
+    margin-top: 40px;
+    max-width: none;
+    width: 100%;
+    background-color: #f4e9fd;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(77, 71, 81, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    max-width: 330px;
+    padding: 23px;
+  }
+  .footer-module-message {
+    color: #000000;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .footer-module-link {
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+  }
+  .footer-module-link > a {
+    background-color: rgb(255,0,25);
+    border-radius: 100px;
+    color: #fff;
+    display: flex;
+    font-family: Nexa Heavy, arial, helvetica, sans-serif;
+    justify-content: center;
+    padding: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 240px;
+  }
+  .sub-footer-social {
+    box-sizing: border-box;
+    padding: 20px 20px 20px;
+  }
+  .li-facebook img {
+  height: 30px;
+  width: 30px;
+}
+.li-instagram img {
+  height: 30px;
+  width: 30px;
+}
+.li-x img {
+  height: 30px;
+  width: 30px;
+}
+.sub-footer-body {
+  color: white;
+  font-size: 13px;
+  padding: 10px 15px 30px;
+  text-align: center;
+  margin-bottom: -40px;
+}
+.sub-footer-copyright {
+  margin-bottom: 8px;
+  margin: 0;
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+.home{
+		margin: 0;
+	}
+	
 </style>
 </head> 
 <body> 
@@ -337,7 +478,59 @@ updatePriceLabels();
 
 	  </script>
 	  -->
-
+<footer class="footer">
+		<div class="footer-module">
+			<div class="footer-module2">
+				<div class="footer-module-message">
+					<p>You want to get the latest information on MotorEmpire? <br><b>Please Log In to continue</b></br></p>
+				</div>
+				<div class="footer-module-link">
+					<a href="#">Log In</a>
+				</div>
+			</div>
+		</div>
+		<ul class="footer-list">
+			<li class="footer-item">
+				<a href="#">About Us</a>
+			</li>
+			<li class="footer-item">
+				<a href="#">Contact Us</a>
+			</li>
+			<li class="footer-item">
+				<a href="#">Privacy Policy</a>
+			</li>
+			<li class="footer-item">
+				<a href="#">Terms of Service</a>
+			</li>
+		</ul>
+		
+	</div>
+	<div class="sub-footer-inner">
+		<div class="sub-footer-social">
+		 <ul class="hArray">
+			 <li>
+				 <a href="https://www.facebook.com/" class="li-facebook"><img src="./images/fb-logo.png" alt=""></a>
+			 </li>
+			 <li>
+				 <a href="https://www.instagram.com/" class="li-instagram"><img src="./images/instagram.png" alt=""></a>
+			 </li>
+			 <li>
+				 <a href="https://twitter.com/" class="li-x"><img src="./images/xlogo.png" alt=""></a>
+			 </li>
+		 </ul>
+		</div> 
+		<div class="sub-footer-body">
+		 <p class="sub-footer-copyright">
+			 ©
+			 2023
+			 MotorVehicle
+		 </p>
+		 <p class="sub-footer-trademark">
+			 All trademark are owned by MotorEmpire, or used with permission
+		 </p>
+		</div>
+	 </div>
+</footer>
 
 </body> 
 </html>
